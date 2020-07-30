@@ -1,0 +1,6 @@
+<h3>Satellite Counts:</h3>
+<div class="counts" *ngIf='totalSatellites()'>
+    <div>Total: {{totalSatellites()}}</div>
+    <div  *ngFor='let satelliteType of generateArrayOfSatelliteTypes()'>{{satelliteType}}: {{totalSatellitesType(satelliteType)}}</div>
+   
+</div>
